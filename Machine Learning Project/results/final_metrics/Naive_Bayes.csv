@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+Naive Bayes,IT25101455,0.896,0.8984,0.893,0.8957,0.896,0.9608,26955,3031,3210,26801,0.8903,0.0021,37.9,239986,"{'nb': 'ComplementNB', 'nb__alpha': 1.0, 'tfidf__ngram_range': (1, 2), 'tfidf__sublinear_tf': True}",Tuned on 100k dev subset with 5-fold CV

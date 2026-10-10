@@ -1,0 +1,5 @@
+variety,train_accuracy,cv_accuracy,cv_f1,cv_std,time_s
+"V1: PCA-2, depth 8 (original)",0.6563,0.644,0.6301,0.0054,7.0
+"V2: TF-IDF 5k, unpruned",1.0,0.7321,0.7328,0.0042,40.3
+"V3: TF-IDF 5k, depth 30",0.9057,0.7462,0.7512,0.0052,23.5
+"V4: TF-IDF 20k (1,2), depth 30",0.8996,0.756,0.7609,0.0082,45.0

@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+Decision Tree,IT25103215,0.7791,0.7601,0.8158,0.787,0.7788,0.8653,22260,7726,5528,24483,0.7611,0.0066,273.4,239986,"{'dt__criterion': 'entropy', 'dt__max_depth': 40, 'dt__min_samples_leaf': 50}",Tuned on 50k dev subset with 5-fold CV

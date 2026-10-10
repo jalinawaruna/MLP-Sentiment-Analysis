@@ -1,0 +1,7 @@
+model_variant,validation,accuracy,f1,roc_auc
+"clean_text, ngram (1, 2), C=1.0, 50k features",5-fold CV (100k dev subset),0.9147,0.9148,
+"clean_text, ngram (1, 1), C=1.0, 50k features",5-fold CV (100k dev subset),0.8906,0.8906,
+"processed_text, ngram (1, 2), C=1.0, 50k features",5-fold CV (100k dev subset),0.8851,0.8855,
+"BASELINE: processed_text, ngram (1, 1), C=1.0, 50k features",5-fold CV (100k dev subset),0.8729,0.8732,
+"Tuned (GridSearchCV): {'svm__C': 0.3, 'tfidf__max_features': 100000, 'tfidf__sublinear_tf': True}",5-fold CV (100k dev subset),,0.9211,
+FINAL: LinearSVC on full training set,"Held-out test set (59,997 reviews)",0.9309,0.931,0.9793

@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+Linear SVM,IT25102662,0.9309,0.9302,0.9319,0.931,0.9309,0.9793,27886,2100,2045,27966,0.9211,0.0002,42.4,239986,"{'svm__C': 0.3, 'tfidf__max_features': 100000, 'tfidf__sublinear_tf': True}",Tuned on 100k dev subset with 5-fold CV

@@ -1,0 +1,7 @@
+model_variant,validation,accuracy,f1,roc_auc
+"MultinomialNB, clean_text, ngram (1, 2), alpha=1.0",5-fold CV (100k dev subset),0.8879,0.8876,
+"MultinomialNB, processed_text, ngram (1, 2), alpha=1.0",5-fold CV (100k dev subset),0.8664,0.8673,
+"MultinomialNB, clean_text, ngram (1, 1), alpha=1.0",5-fold CV (100k dev subset),0.8458,0.8429,
+"BASELINE: MultinomialNB, processed_text, ngram (1, 1), alpha=1.0",5-fold CV (100k dev subset),0.8376,0.8363,
+"Tuned (GridSearchCV): {'nb': ComplementNB(), 'nb__alpha': 1.0, 'tfidf__ngram_range': (1, 2), 'tfidf__sublinear_tf': True}",5-fold CV (100k dev subset),,0.8903,
+FINAL: best Naive Bayes on full training set,"Held-out test set (59,997 reviews)",0.896,0.8957,0.9608

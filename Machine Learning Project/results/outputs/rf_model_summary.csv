@@ -1,0 +1,8 @@
+model_variant,validation,accuracy,f1,roc_auc
+Decision Tree (baseline),5-fold CV (50k dev subset),0.7392,0.7394,
+RF default (100 trees),5-fold CV (50k dev subset),0.8619,0.8594,
+"RF, stop words removed (processed_text)",5-fold CV (50k dev subset),0.8539,0.8534,
+"RF, unigrams only",5-fold CV (50k dev subset),0.8526,0.8488,
+RF + class_weight=balanced,5-fold CV (50k dev subset),0.8621,0.8596,
+"Tuned (GridSearchCV): {'rf__max_depth': None, 'rf__max_features': 'log2', 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}",5-fold CV (50k dev subset),,0.8742,
+FINAL: tuned Random Forest on full training set,"Held-out test set (59,997 reviews)",0.8896,0.8887,0.9571

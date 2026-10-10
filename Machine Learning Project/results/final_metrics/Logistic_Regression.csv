@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+Logistic Regression,IT25100100,0.9242,0.9241,0.9245,0.9243,0.9242,0.9764,27708,2278,2267,27744,0.9159,0.0005,34.6,239986,"{'classifier__C': 2.0, 'tfidf__ngram_range': (1, 2), 'tfidf__sublinear_tf': True}",Tuned on 100k dev subset with 5-fold CV

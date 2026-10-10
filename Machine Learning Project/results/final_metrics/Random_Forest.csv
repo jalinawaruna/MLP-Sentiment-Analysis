@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+Random Forest,IT25100646,0.8896,0.8961,0.8814,0.8887,0.8896,0.9571,26919,3067,3558,26453,0.8742,0.0031,83.9,239986,"{'rf__max_depth': None, 'rf__max_features': 'log2', 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}",Tuned on 50k dev subset with 5-fold CV

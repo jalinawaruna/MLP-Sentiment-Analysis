@@ -1,0 +1,13 @@
+parameter,value,cv_f1
+n_estimators,25,0.8276
+n_estimators,50,0.8412
+n_estimators,100,0.8478
+n_estimators,200,0.8535
+max_depth,10,0.8311
+max_depth,30,0.8448
+max_depth,60,0.8491
+max_depth,None,0.8478
+min_samples_leaf,1,0.8478
+min_samples_leaf,2,0.8507
+min_samples_leaf,5,0.8513
+min_samples_leaf,10,0.8491

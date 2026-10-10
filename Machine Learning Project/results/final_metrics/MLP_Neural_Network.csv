@@ -1,0 +1,2 @@
+model,student_id,accuracy,precision,recall,f1,f1_macro,roc_auc,tn,fp,fn,tp,cv_f1_mean,cv_f1_std,train_time_s,n_train,best_params,notes
+MLP Neural Network,IT25102248,0.917,0.9135,0.9213,0.9174,0.917,0.974,27369,2617,2363,27648,0.9029,0.0017,301.9,239986,"{'mlp__alpha': 0.0001, 'mlp__hidden_layer_sizes': (16, 8), 'tfidf': 'V4: 10k, stop words kept, bigrams'}",Tuned on 50k dev subset with 5-fold CV; early stopping

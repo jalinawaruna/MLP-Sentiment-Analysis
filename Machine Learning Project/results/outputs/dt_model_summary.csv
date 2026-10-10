@@ -1,0 +1,7 @@
+model_variant,validation,accuracy,f1,roc_auc
+"V1: PCA-2, depth 8 (original)",5-fold CV (50k dev subset),0.644,0.6301,
+"V2: TF-IDF 5k, unpruned",5-fold CV (50k dev subset),0.7321,0.7328,
+"V3: TF-IDF 5k, depth 30",5-fold CV (50k dev subset),0.7462,0.7512,
+"V4: TF-IDF 20k (1,2), depth 30",5-fold CV (50k dev subset),0.756,0.7609,
+"Tuned (GridSearchCV): {'dt__criterion': 'entropy', 'dt__max_depth': 40, 'dt__min_samples_leaf': 50}",5-fold CV (50k dev subset),,0.7611,
+FINAL: tuned Decision Tree on full training set,"Held-out test set (59,997 reviews)",0.7791,0.787,0.8653

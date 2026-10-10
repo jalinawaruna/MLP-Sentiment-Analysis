@@ -1,0 +1,7 @@
+model_variant,validation,accuracy,f1,roc_auc
+"V1: 1k, stop words removed (original), MLP (16, 8)",5-fold CV (50k dev subset),0.8428,0.8424,
+"V2: 1k, stop words kept, MLP (16, 8)",5-fold CV (50k dev subset),0.8624,0.8619,
+"V3: 10k, stop words kept, MLP (16, 8)",5-fold CV (50k dev subset),0.8526,0.8522,
+"V4: 10k, stop words kept, bigrams, MLP (16, 8)",5-fold CV (50k dev subset),0.8751,0.8754,
+"Tuned (GridSearchCV): {'mlp__alpha': 0.0001, 'mlp__hidden_layer_sizes': (16, 8)}",5-fold CV (50k dev subset),,0.9029,
+FINAL: tuned MLP on full training set,"Held-out test set (59,997 reviews)",0.917,0.9174,0.974

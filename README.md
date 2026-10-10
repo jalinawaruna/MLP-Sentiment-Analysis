@@ -139,7 +139,7 @@ These visualizations help evaluate classification performance and identify poten
 ### Step 1: Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/jalinawaruna/MLP-Sentiment-Analysis.git
 cd MLP-Sentiment-Analysis
 ```
 
